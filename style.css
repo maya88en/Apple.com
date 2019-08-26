@@ -49,8 +49,8 @@ table {
 }
 
 .center {
-    background-image:url("../Apple.com/img/ice.jpg");
-    position: absolute;
+    background-image:url("img/ice.jpg");
+    position: relative;
     background-size:cover;
     width: 100%;
     padding-bottom: 100%;
@@ -59,32 +59,103 @@ table {
 }
 
 .center .verse a {
-    font-size: 25px;
+    font-size: 70px;
     line-height: 1.85;
     text-decoration: none;
     color: white;
     position: absolute;
-    left: 42%;
-    top: 82%;
+    left: 26%;
+    top: 71%;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
 }
 .center .subhead a {
-    font-size: 25px;
-    line-height: 1.85;
+    font-size: 33px;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    line-height: 1.4;
     text-decoration: none;
     color: white;
     position: absolute;
-    left: 30%;
-    top: 86%;
+    left: 22%;
+    top: 81%;
 }
 .billboard {position: relative;}
+
 .center .list {
     display: flex;
     position: absolute;
-    left: 40%;
-    top: 70%;
-    color: white;
+    left: 25%;
+    top: 65%;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+
+  .list .logo img {
+      width: 30px;
+      margin-bottom: -4px;
+  }
+
+  .item a {
+      padding-top: 28px;
+  }
+
+  .list .search img {
+      width: 15px;
+      position: relative;
+      float: left;
+      top: 4px;
+      left: 20px;
+  }
+
+  .search {
+    background: 0 0;
+    text-shadow: none;
+    color: inherit;
+    margin: 0.5em 0 0 0;
+  }
+
+   .back-img1 {
+      background:url("img/promo_30_years.jpg");
+      background-repeat: none;
+      background-size:50% 50% 50% 50%;
+      width: 100%;
+      padding-bottom: 100%;
+
+    
+  }
+  .back-img2 {
+    background-image:url("img/promo_30_years.jpg");
+}
+  .back-img3 {
+    background-image:url("../Apple.com/img/promo_30_years.jpg");
+}
+  .back-img4 {
+    background-image:url("../Apple.com/img/promo_30_years.jpg");
+}
 
 /*body {
     min-height: 100%;
