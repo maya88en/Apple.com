@@ -48,8 +48,45 @@ table {
     box-sizing: border-box;
 }
 
+.center {
+    background-image:url("../Apple.com/img/ice.jpg");
+    position: absolute;
+    background-size:cover;
+    width: 100%;
+    padding-bottom: 100%;
+    bottom:10%;
+    text-align: center;
+}
 
-body {
+.center .verse a {
+    font-size: 25px;
+    line-height: 1.85;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 42%;
+    top: 82%;
+}
+.center .subhead a {
+    font-size: 25px;
+    line-height: 1.85;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 30%;
+    top: 86%;
+}
+.billboard {position: relative;}
+.center .list {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    color: white;
+}
+
+
+/*body {
     min-height: 100%;
     position: relative;
     top: 0;
