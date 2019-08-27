@@ -1,56 +1,10 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* End of reset styles */
-
 * {
     box-sizing: border-box;
 }
 
 .center {
     background-image:url("img/ice.jpg");
-    position: relative;
+    position: absolute;
     background-size:cover;
     width: 100%;
     padding-bottom: 100%;
@@ -59,14 +13,14 @@ table {
 }
 
 .center .verse a {
-    font-size: 70px;
-    line-height: 1.85;
+    font-size: 45px;
+    line-height: 1.7;
     text-decoration: none;
     color: white;
     position: absolute;
-    left: 26%;
-    top: 71%;
-    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 16%;
+    top: 74%;
+    font-family:'Lexend Zetta', sans-serif;
     font-weight: lighter;
 }
 .center .subhead a {
@@ -77,19 +31,18 @@ table {
     text-decoration: none;
     color: white;
     position: absolute;
-    left: 22%;
+    left: 17%;
     top: 81%;
 }
-.billboard {position: relative;}
 
 .center .list {
     display: flex;
     position: absolute;
-    left: 25%;
-    top: 65%;
+    left: 20%;
+    top: 68%;
 }
 
-ul {
+.center ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -97,20 +50,20 @@ ul {
     background-color: #333333;
   }
   
-  li {
+ .list li,
+ .list2 li {
     float: left;
   }
   
-  li a {
+ .list li a {
     display: block;
     color: white;
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    
   }
   
-  li a:hover {
+  .list li a:hover {
     background-color: #111111;
   }
 
@@ -138,24 +91,95 @@ ul {
     margin: 0.5em 0 0 0;
   }
 
-   .back-img1 {
-      background:url("img/promo_30_years.jpg");
-      background-repeat: none;
-      background-size:50% 50% 50% 50%;
-      width: 100%;
-      padding-bottom: 100%;
+  .promo1 {
+    background: url(img/promo_30_years.jpg) no-repeat 0% 10%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 25% 30%;
+    top: 83%;
+}
 
-    
+.promo2 {
+    background: url(img/promo_iphone5c.jpg) no-repeat 33% 10%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 25% 30%;
+    top: 83%;
+}
+
+.promo3 {
+    background: url(img/promo_iphone5s.jpg) no-repeat 67% 10%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 26% 30%;
+    top: 83%;
+}
+
+.promo4 {
+    background: url(img/promo_supplier_responsibility.jpg) no-repeat 100% 10%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 25% 30%;
+    top: 83%;
+}
+
+.promos p {
+    position: absolute;
+    font-size: 12px;
+    top: 127%;
+    left: 15%;
+}
+
+
+/*.promos  {
+    background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/global/elements/flags/16x16/usa.png");
+    top: 127%;
+    right: 40%;
+}*/
+
+/*
+
+.promos .list2 {
+        display: flex;
+        position: absolute;
+        right: 60%;
+        top: 128%;
+    }
+
+.list2 li {
+    float: right;
+  }*/
+  
+  .promos ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 60%;
+    top: 130%;
+    font-size: 12px;
+}
+  
+ .list2 li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    border-right: 0.1px solid gold;
   }
-  .back-img2 {
-    background-image:url("img/promo_30_years.jpg");
+
+  .promos .img {
+    background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/global/elements/flags/16x16/usa.png");
+    top: 127%;
+    right: 40%;
 }
-  .back-img3 {
-    background-image:url("../Apple.com/img/promo_30_years.jpg");
-}
-  .back-img4 {
-    background-image:url("../Apple.com/img/promo_30_years.jpg");
-}
+
+
 
 /*body {
     min-height: 100%;
@@ -166,373 +190,7 @@ ul {
     padding: 0;
     margin: 0;
     z-index: 1;
-}
-
-.main-upfront {
-    position: relative;
-    top: 18px;
-    display: block;
-    width: 980px;
-    z-index: 998;
-    margin: 0 auto;
-    height: 36px;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
-}
-
-.main-upfront-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 36px;
-}
-
-.upfront-list  {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    list-style: none;
-    width: 845px;
-    height: 36px;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.upfront-list-item:first-child {
-    border-radius: 4px 0 0 4px;
-    border-width: 0 2px 0 0;
-}
-
-.upfront-list-item {
-    width: 100%;
-    height: 36px;
-    border-right: 2px solid;
-    -webkit-border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D) 0 2 0 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.upfront-list {
-	list-style: none
-}
-
-.upfront-list-link {
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 400;
-    height: auto;
-    line-height: 18px;
-    color: #C7C7C7;
-}
-
-
-a:-webkit-any-link {
-	cursor: pointer;
-}
-
-li {
-	display: list-item;
-	text-align: -webkit-match-parent;
-}
-
-.main-upfront-search {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 135px;
-    padding: 8px 13px;
-    background: none;
-    border-width: 0 2px 0 1px;
-}
-
-.main-search {
-    position: relative;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    background-image: none;
-    background-color: rgba(255, 255, 255, .1);
-    border: 0 none;
-    color: #fff;
-}
-
-form {
-    display: block;
-    margin-top: 0em;
-}
-
-div {
-    display: block;
-}
-
-.search-container input {
-    width: 100%;
-    height: 19px;
-    background-image: none;
-    color: #fff;
-    background: none;
-}
-
-input {
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    -webkit-appearance: textfield;
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 0px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-}
-
-.upfront-search-icon {
-    position: absolute;
-    top: 13px;
-    left: 18px;
-    width: 15px;
-    height: 14px;
-}
-
-.upfront-search-icon img {
-    width: 15px;
-    height: 14px;
-}
-
-.ice {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 292px;
-    right: 0;
-    width: 100%;
-    height: 500px;
-}
-
-section {
-    display: block;
-}
-
-.ice-img {
-    background: url(img/ice.jpg) no-repeat 80% 100%;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.ice-header {
-    position: absolute;
-    top: 125px;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-
-.title-ice {
-    font-size: 60px;
-    font-weight: 100;
-    font-style: normal;
-    line-height: 36px;
-    color: #fff;
-    margin: 0 0 30px;
-    padding: 0;
-}
-
-:-webkit-any(article,aside,nav,section) h1 {
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-}
-
-h1 {
-    display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.subtitle {
-    margin: 0 auto 27px;
-    font-size: 31px;
-    font-weight: 100;
-    line-height: 36px;
-    color: #fff;
-}
-
-h2 {
-    display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.subtitle-center-span {
-    margin: 0 18px 25px;
-    height: 29px;
-    font-size: 25px;
-    font-weight: 100;
-    color: #fff;
-}
-
-.promos {
-    position: absolute;
-    z-index: 1;
-    top: 500px;
-    left: 0;
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.promo-list {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 200px;
-}
-
-.promo-item {
-    position: relative;
-    z-index: 1;
-    float: left;
-    overflow: hidden;
-    margin: 0;
-    width: 25%;
-    height: 200px;
-}
-
-.site-footer {
-    position: absolute;
-    top: 700px;
-    left: 0;
-    z-index: 1;
-    margin: 0;
-    width: 100%;
-    height: 90px;
-    min-width: 1000px;
-}
-
-footer {
-    display: block;
-}
-
-.footer-container {
-    margin: 0 auto;
-    width: 1000px;
-    padding: 10px 0 29px;
-}
-
-.footer-firstrow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.firstrow-left {
-    font-size: 11px;
-    width: 49%;
-    padding-top: 10px;
-    color: #6e6e6e;
-}
-
-.firstrow-left a {
-    text-decoration: none;
-    color: #08c;
-}
-
-.firstrow-right {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 600px;
-    padding-top: 10px;
-    margin: 0;
-    padding-left: 0;
-}
-
-.firstrow-item:first-child {
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
-}
-
-.firstrow-item {
-    font-size: 10px;
-    margin-left: 5px;
-    padding-left: 5px;
-    border-left: 1px solid #ccc;
-}
-
-.firstrow-link {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13px;
-    color: #08c;
-}
-
-.footer-scndrow {
-    width: 500px;
-    padding-top: 17px;
-    display: flex;
-    flex-direction: row;
-}
-
-.scndrow-left {
-    color: #6e6e6e;
-    margin: 0;
-    padding: 17px 0 0 0;
-    font-size: 11px;
-    display: flex;
-    flex-direction: row;
-}
-
-.scndrow-left-list {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 17px 0 0 0;
-}
-
-.footer-scndrow {
-    width: 500px;
-    padding-top: 17px;
-    display: flex;
-    flex-direction: row;
-}
-
-.scndrow-link {
-    display: inline-block;
-    font-size: 11px;
-    text-decoration: none;
-    color: #08c;
-}
-
-
+}*/
 
 
 
