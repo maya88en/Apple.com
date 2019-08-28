@@ -36,6 +36,23 @@
     top: 81%;
 }
 
+.center h2 a {
+    font-size: 24px;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    line-height: 1.4;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 27%;
+    top: 90%;
+}
+
+.center h2 a:hover {
+    text-decoration: underline;
+}
+
+
 .center .list {
     display: flex;
     position: absolute;
