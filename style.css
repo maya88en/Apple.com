@@ -1,197 +1,196 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .center {
-    background-image: url("img/ice.jpg");
-    position: absolute;
-    background-size: cover;
-    width: 100%;
-    padding-bottom: 100%;
-    bottom: 10%;
-    text-align: center;
+  background-image: url("img/ice.jpg");
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 100%;
+  bottom: 10%;
+  text-align: center;
 }
 
-.center .verse a {
-    font-size: 45px;
-    line-height: 1.7;
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    left: 16%;
-    top: 74%;
-    font-family: 'Lexend Zetta', sans-serif;
-    font-weight: lighter;
+.item a {
+  padding-top: 28px;
 }
 
-.center .subhead a {
-    font-size: 33px;
-    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    line-height: 1.4;
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    left: 17%;
-    top: 81%;
+.promos a {
+  color: blue;
+  text-decoration: none;
 }
 
 .center h2 a {
-    font-size: 24px;
-    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    line-height: 1.4;
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    left: 27%;
-    top: 90%;
+  font-size: 24px;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  line-height: 1.4;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 27%;
+  top: 90%;
+}
+
+.list li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.list2 li a {
+  display: inline-block;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  border-right: 0.1px solid gainsboro;
+}
+
+.center .verse a {
+  font-size: 45px;
+  line-height: 1.7;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 16%;
+  top: 74%;
+  font-family: 'Lexend Zetta', sans-serif;
+  font-weight: lighter;
+}
+
+.center .subhead a {
+  font-size: 33px;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  line-height: 1.4;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 17%;
+  top: 81%;
+}
+
+.promos a:hover,
+.list2 li a:hover {
+  text-decoration: underline;
 }
 
 .center h2 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .center .list {
-    display: flex;
-    position: absolute;
-    left: 20%;
-    top: 68%;
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 68%;
 }
 
 .center ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 .list li,
 .list2 li {
-    float: left;
-}
-
-.list li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  float: left;
 }
 
 .list li a:hover {
-    background-color: #111111;
+  background-color: #111;
 }
 
 .list .logo img {
-    width: 30px;
-    margin-bottom: -4px;
-}
-
-.item a {
-    padding-top: 28px;
+  width: 30px;
+  margin-bottom: -4px;
 }
 
 .list .search img {
-    width: 15px;
-    position: relative;
-    float: left;
-    top: 4px;
-    left: 20px;
+  width: 15px;
+  position: relative;
+  float: left;
+  top: 4px;
+  left: 20px;
 }
 
 .search {
-    background: 0 0;
-    text-shadow: none;
-    color: inherit;
-    margin: 0.5em 0 0 0;
+  background: 0 0;
+  text-shadow: none;
+  color: inherit;
+  margin: 0.5em 0 0 0;
 }
 
 .promo1 {
-    background: url(img/promo_30_years.jpg) no-repeat 0% 100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: 25% 40%;
-    top: 29%;
+  background: url(img/promo_30_years.jpg) no-repeat 0% 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 25% 40%;
+  top: 29%;
 }
 
 .promo2 {
-    background: url(img/promo_iphone5c.jpg) no-repeat 33% 100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: 25% 40%;
-    top: 29%;
+  background: url(img/promo_iphone5c.jpg) no-repeat 33% 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 25% 40%;
+  top: 29%;
 }
 
 .promo3 {
-    background: url(img/promo_iphone5s.jpg) no-repeat 67% 100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: 26% 40%;
-    top: 29%;
+  background: url(img/promo_iphone5s.jpg) no-repeat 67% 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 26% 40%;
+  top: 29%;
 }
 
 .promo4 {
-    background: url(img/promo_supplier_responsibility.jpg) no-repeat 100% 100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: 25% 40%;
-    top: 29%;
+  background: url(img/promo_supplier_responsibility.jpg) no-repeat 100% 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 25% 40%;
+  top: 29%;
 }
 
 .promos p {
-    position: absolute;
-    font-size: 12px;
-    top: 130%;
-    left: 15%;
-    color: black;
-    margin-bottom:40px;
+  position: absolute;
+  font-size: 12px;
+  top: 130%;
+  left: 15%;
+  color: black;
+  margin-bottom: 40px;
 }
 
 .promos ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 60%;
-    top: 133%;
-    font-size: 12px;
-}
-
-.list2 li a {
-    display: inline-block;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    border-right: 0.1px solid gainsboro;
-}
-
-.list2 li a:hover,
-.promos a:hover {
-    text-decoration: underline;
-}
-
-.promos a {
-    color: blue;
-    text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 60%;
+  top: 133%;
+  font-size: 12px;
 }
 
 .promos .img {
-    background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/global/elements/flags/16x16/usa.png") no-repeat 100% 20%;
-    width: 100%;
-    padding-bottom: 100%;
-    margin-right: 15px;
-    border-right: none;
+  background: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/global/elements/flags/16x16/usa.png") no-repeat 100% 20%;
+  width: 100%;
+  padding-bottom: 100%;
+  margin-right: 15px;
+  border-right: none;
 }
 
 body {
-    height: 400px;
-    position: relative;
-    top: 230px;
+  height: 400px;
+  position: relative;
+  top: 230px;
 }
